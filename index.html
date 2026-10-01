@@ -18,7 +18,9 @@
             font-family: 'Geist', sans-serif;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            height: 100vh;
+            height: 100dvh; /* Modern fix for mobile address bars */
+            overflow: hidden; /* strictly prevents any scrolling */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -53,7 +55,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem;
         }
 
         /* Typography */
@@ -73,9 +75,8 @@
 
         /* Footer Styles */
         footer {
-            padding: 2rem;
+            padding: 1.5rem 1rem 2rem 1rem;
             text-align: center;
-            margin-bottom: 2rem;
         }
 
         footer p {
@@ -104,6 +105,12 @@
             }
             p.subtitle {
                 font-size: 1rem;
+            }
+            main {
+                padding: 1rem;
+            }
+            footer {
+                padding: 1rem 1rem 1.5rem 1rem;
             }
         }
     </style>
